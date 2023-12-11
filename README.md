@@ -21,28 +21,23 @@ Set shell to `/bin/sh` and use python3 PTY stabilization method
 
 `hypshell.py 4242 -s /bin/sh -m python3`
 
-# Options
+## Options
 ```
-usage: ./hypshell.py [options] port
-
-positional arguments:
-  port                  port number
-
 options:
   -h, --help            show this help message and exit
   -m method, --method method
-                        stabilize the connection using the specified method (default: script)
-  -v, --verbose         verbose mode
+                        Stabilize the connection using the specified method (default: script)
+  -v, --verbose         Verbose mode
   -i interface, --interface interface
-                        specify the network interface to use
-  -n, --normal          use normal mode instead of alternate screen
-  -c, --stabilize       do not stabilize the connection
+                        Specify the network interface to use
+  -n, --normal          Use normal mode instead of alternate screen
+  -c, --stabilize       Do not stabilize the connection
   -e, --echo            echo input
   -s shell, --shell shell
-                        specify the full path of the shell to use (default: /bin/bash)
-  -t, --sigint          handle SIGINT signal
-  -r, --sigterm         handle SIGTERM signal
-  -q, --sigquit         handle SIGQUIT signal
+                        Specify the full path of the shell to use (default: /bin/bash)
+  -t, --sigint          Handle SIGINT signal
+  -r, --sigterm         Handle SIGTERM signal
+  -q, --sigquit         Handle SIGQUIT signal
   -x address, --connect address
                         connect to specified address instead of bind
 ```
