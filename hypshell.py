@@ -187,7 +187,7 @@ def initialize_parser():
     parser.add_argument("-n", "--normal", action="store_true",
                         help="use normal mode instead of alternate screen")
     parser.add_argument("-c", "--stabilize", action="store_false", default=True,
-                        help="do not stabilize the connection")
+                        help="do not stabilize the shell")
     parser.add_argument("-e", "--echo", action="store_true", default=False,
                         help="echo input")
     parser.add_argument("-s", "--shell", metavar="shell", default="/bin/bash",
