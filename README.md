@@ -1,5 +1,5 @@
 # hypshell
-A simple reverse shell handler and stabilizer
+A simple reverse shell handler and automatic stabilizer
 
 Listens and automates the process of stabilizing a reverse shell 
 # Usage
