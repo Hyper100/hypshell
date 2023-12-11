@@ -4,22 +4,6 @@ A simple reverse shell handler and stabilizer
 `usage: ./hypshell.py [options] port`
 
 **NOTE: To exit the program you have to enter "exit" on the shell session even if you can't read the input**
-### Examples:
-Start a reverse shell listener on port 4242 and start an alternative screen:
-
-`hypshell.py 4242`
-
-Handle `^\` to exit the program:
-
-`hypshell.py 4242 -q`
-
-Use connect mode and verbose
-
-`hypshell.py 4242 -vx 127.0.0.1`
-
-Set shell to `/bin/sh` and use python3 PTY stabilization method
-
-`hypshell.py 4242 -s /bin/sh -m python3`
 
 ## Options
 ```
@@ -41,6 +25,23 @@ options:
   -x address, --connect address
                         connect to specified address instead of bind
 ```
+### Examples:
+Start a reverse shell listener on port 4242 and start an alternative screen:
+
+`hypshell.py 4242`
+
+Handle `^\` to exit the program:
+
+`hypshell.py 4242 -q`
+
+Use connect mode and verbose
+
+`hypshell.py 4242 -vx 127.0.0.1`
+
+Set shell to `/bin/sh` and use python3 PTY stabilization method
+
+`hypshell.py 4242 -s /bin/sh -m python3`
+
 # Built-in Methods
 Feel free to append your own methods to the code.
 ```
