@@ -165,11 +165,11 @@ def listener(port, interface=None):
 def initialize_parser():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        description="HypShell - A simple reverse shell handler and stabilizer",
+        description="hypshell - a simple reverse shell handler and stabilizer",
         usage=f"{sys.argv[0]} [options] port",
         epilog=textwrap.dedent(
             """
-            Examples:
+            examples:
                 hypshell.py 4242
                 hypshell.py 4242 -q
                 hypshell.py 4242 -vx 127.0.0.1
