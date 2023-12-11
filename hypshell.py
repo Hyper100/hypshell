@@ -162,7 +162,9 @@ def listener(port, interface=None):
         exit(0)
 
 
-def initialize_parser():
+def main():
+    global args, shell
+
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description="hypshell - a simple reverse shell handler and stabilizer",
@@ -202,13 +204,6 @@ def initialize_parser():
                         help="connect to specified address instead of bind")
 
     args = parser.parse_args()
-
-    return args
-
-
-def main():
-    global args, shell
-    args = initialize_parser()
 
     if not str(args.port).isdigit():
         print("Invalid port")
