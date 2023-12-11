@@ -167,7 +167,7 @@ def main():
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        description="hypshell - a simple reverse shell handler and stabilizer",
+        description="hypshell - a simple reverse shell handler and automatic stabilizer",
         usage=f"{sys.argv[0]} [options] port",
         epilog=textwrap.dedent(
             """
