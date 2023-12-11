@@ -44,11 +44,11 @@ Handle `^\` to exit the program:
 
 `hypshell.py 4242 -q`
 
-Use connect mode and verbose
+Use connect mode and verbose:
 
 `hypshell.py 4242 -vx 127.0.0.1`
 
-Set shell to `/bin/sh` and use python3 PTY stabilization method
+Set shell to `/bin/sh` and use python3 PTY stabilization method:
 
 `hypshell.py 4242 -s /bin/sh -m python3`
 
