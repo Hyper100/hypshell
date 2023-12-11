@@ -7,8 +7,8 @@ import select
 import fcntl
 import textwrap
 import sys
-args = None
 
+args = None
 shell = "/bin/bash"
 # Feel free to add more stabilization methods
 stabilization_methods = {
