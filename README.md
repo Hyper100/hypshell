@@ -70,6 +70,6 @@ hypshell.py 4242
 # License
 GPLv3
 # TODO
-> add more stabilization methods
-> rewrite the tool in C and upload binaries
-> more
+- add more stabilization methods
+- rewrite the tool in C and upload binaries
+- more
