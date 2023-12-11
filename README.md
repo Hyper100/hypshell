@@ -49,7 +49,7 @@ Set shell to `/bin/sh` and use python3 PTY stabilization method
 
 # Built-in Methods
 Feel free to append your own methods to the code.
-```
+```shell
 script: /usr/bin/script -qc {shell} /dev/null
 socat: /usr/bin/socat exec:'{shell} -li',pty,stderr,setsid,sigint,sane tcp-connect
 python3: python3 -c 'import pty; pty.spawn("{shell}")'
