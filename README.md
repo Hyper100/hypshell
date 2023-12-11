@@ -46,6 +46,7 @@ Feel free to append your own methods to the code.
 ```
 script: /usr/bin/script -qc {shell} /dev/null
 socat: /usr/bin/socat exec:'{shell} -li',pty,stderr,setsid,sigint,sane tcp-connect
+python: python -c 'import pty; pty.spawn("{shell}")'
 python3: python3 -c 'import pty; pty.spawn("{shell}")'
 perl: perl -e 'exec "{shell}";'
 ruby: ruby -e 'exec "{shell}";'
