@@ -1,7 +1,7 @@
 # hypshell
 A simple reverse shell handler and stabilizer
 
-Listens and automates the proccess of stabilizing a reverse shell 
+Listens and automates the process of stabilizing a reverse shell 
 # Usage
 `usage: ./hypshell.py [options] port`
 
