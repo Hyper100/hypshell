@@ -26,7 +26,7 @@ options:
   -i interface, --interface interface
                         specify the network interface to use
   -n, --normal          use normal mode instead of alternate screen
-  -c, --stabilize       do not stabilize the connection
+  -c, --stabilize       do not stabilize the shell
   -e, --echo            echo input
   -s shell, --shell shell
                         specify the full path of the shell to use (default: /bin/bash)
@@ -37,13 +37,21 @@ options:
                         connect to specified address instead of bind
 ```
 ### Examples:
-Start a reverse shell listener on port 4242 and start an alternative screen:
+Start a reverse shell listener on port 4242:
 
 `hypshell.py 4242`
 
 Handle `^\` to exit the program:
 
 `hypshell.py 4242 -q`
+
+Use normal mode instead of alternative screen:
+
+`hypshell.py 4242 -n`
+
+Don't stabilize the shell and turn input echo on:
+
+`hypshell.py 4242 -se`
 
 Use connect mode and verbose:
 
