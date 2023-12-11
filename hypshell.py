@@ -170,8 +170,10 @@ def initialize_parser():
         epilog=textwrap.dedent(
             """
             Examples:
-                blah blah blah
-                blah blah blah
+                hypshell.py 4242
+                hypshell.py 4242 -q
+                hypshell.py 4242 -vx 127.0.0.1
+                hypshell.py 4242 -s /bin/sh -m python3
             """
         ))
 
