@@ -179,25 +179,25 @@ def initialize_parser():
 
     parser.add_argument("port", type=int, help="Port number")
     parser.add_argument("-m", "--method", metavar="method", default="script",
-                        help="Stabilize the connection using the specified method (default: script)")
+                        help="stabilize the connection using the specified method (default: script)")
     parser.add_argument("-v", "--verbose",
-                        action="store_true", help="Verbose mode")
+                        action="store_true", help="verbose mode")
     parser.add_argument("-i", "--interface", metavar="interface",
-                        help="Specify the network interface to use")
+                        help="specify the network interface to use")
     parser.add_argument("-n", "--normal", action="store_true",
-                        help="Use normal mode instead of alternate screen")
+                        help="use normal mode instead of alternate screen")
     parser.add_argument("-c", "--stabilize", action="store_false", default=True,
-                        help="Do not stabilize the connection")
+                        help="do not stabilize the connection")
     parser.add_argument("-e", "--echo", action="store_true", default=False,
                         help="echo input")
     parser.add_argument("-s", "--shell", metavar="shell", default="/bin/bash",
-                        help="Specify the full path of the shell to use (default: /bin/bash)")
+                        help="specify the full path of the shell to use (default: /bin/bash)")
     parser.add_argument("-t", "--sigint", action="store_true", default=False,
-                        help="Handle SIGINT signal")
+                        help="handle SIGINT signal")
     parser.add_argument("-r", "--sigterm", action="store_true", default=False,
-                        help="Handle SIGTERM signal")
+                        help="handle SIGTERM signal")
     parser.add_argument("-q", "--sigquit", action="store_true", default=False,
-                        help="Handle SIGQUIT signal")
+                        help="handle SIGQUIT signal")
     parser.add_argument("-x", "--connect", metavar="address", default=None,
                         help="connect to specified address instead of bind")
 
