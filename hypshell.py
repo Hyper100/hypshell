@@ -177,7 +177,7 @@ def initialize_parser():
             """
         ))
 
-    parser.add_argument("port", type=int, help="Port number")
+    parser.add_argument("port", type=int, help="port number")
     parser.add_argument("-m", "--method", metavar="method", default="script",
                         help="stabilize the connection using the specified method (default: script)")
     parser.add_argument("-v", "--verbose",
