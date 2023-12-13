@@ -38,7 +38,7 @@ options:
   -x address, --connect address
                         connect to specified address instead of bind
 ```
-### Examples:
+### Examples
 Start a reverse shell listener on port 4242:
 
 `hypshell.py 4242`
