@@ -23,14 +23,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-import argparse
-import socket
 import os
-import termios
-import select
-import fcntl
-import textwrap
 import sys
+import socket
+import select
+import termios
+import fcntl
+import argparse 
+import textwrap
 
 args = None
 shell = "/bin/bash"
